@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Kumbh Sans", serif;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 3rem;
+  width: 100%;
+}
+
+.profile {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 4px 4px 7px 5px rgba(0, 0, 0, 0.0666666667);
+}
+.profile__owner-info, .profile__location, .profile__info {
+  padding-inline: 2rem;
+}
+.profile__content {
+  padding-block: 2rem;
+}
+.profile__img-container {
+  position: relative;
+  height: 9rem;
+  width: 100%;
+  background-image: url(./images/bg-pattern-card.svg);
+  border-radius: 20px 20px 0 0;
+}
+.profile__img {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.profile__owner-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.profile__owner {
+  font-size: 2.2rem;
+  color: hsl(229, 23%, 23%);
+  margin-block: 1.1rem;
+  margin-inline-end: 1.4rem;
+}
+.profile__age {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.5rem;
+}
+.profile__location {
+  text-align: center;
+  font-style: initial;
+  color: hsl(0, 0%, 59%);
+  font-size: 1.3rem;
+  margin-block-end: 0.9rem;
+}
+.profile__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile__engagements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.profile__engagements--engagement {
+  color: hsl(229, 23%, 23%);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.profile__engagements--text {
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 1.3px;
+}
+
+hr {
+  display: block;
+  border: none;
+  height: 1px;
+  margin-block: 2rem;
+  background-color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
