@@ -11,6 +11,8 @@ body {
   font-family: "Kumbh Sans", serif;
   min-height: 100vh;
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: -50% -50%, 20% 30%;
+  background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
   display: flex;
   flex-direction: column;
@@ -100,6 +102,7 @@ hr {
   height: 1px;
   margin-block: 2rem;
   background-color: hsl(0, 0%, 59%);
+  opacity: .4;
 }
 
 .attribution {
